@@ -3,9 +3,9 @@ import { Form, Label, Input, Button } from './Phonebook.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { getContacts } from 'redux/selector';
 import { nanoid } from 'nanoid';
-import { addContact } from 'redux/contactsSlice';
+import { addContact } from 'redux/operations';
 
-export const Phonebook = ({ onAdd }) => {
+export const Phonebook = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const dispatch = useDispatch();
