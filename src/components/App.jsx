@@ -20,7 +20,7 @@ export const App = () => {
       <Phonebook />
       <Subtitle>Contacts</Subtitle>
       {contactList.length > 0 && <Filter />}
-      <ContactList />
+      {contactList.length > 0 && <ContactList />}
     </Wrapper>
   );
 };

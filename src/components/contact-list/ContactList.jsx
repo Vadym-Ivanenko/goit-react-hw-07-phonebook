@@ -1,3 +1,4 @@
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectVisibleContacts } from 'redux/selector';
 import { deleteContact } from 'redux/operations';
