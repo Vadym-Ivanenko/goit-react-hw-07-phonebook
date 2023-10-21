@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+
 import { addContact, deleteContact, fetchContacts } from './operations';
 
 const handlePending = state => {
@@ -18,7 +19,7 @@ export const contactSlice = createSlice({
       isLoading: false,
       error: null,
     },
-    filter: '',
+    filters: '',
   },
   reducers: {
     filterContacts(state, action) {
